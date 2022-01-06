@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('categories', \App\Http\Controllers\Api\CategoryController::class)->only(['index', 'show']);
+Route::apiResource('products', \App\Http\Controllers\Api\ProductController::class)->only(['index', 'show']);
